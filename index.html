@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lezzetli Tarifler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Lezzetli Tarifler</div>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Ana Sayfa</a></li>
+            <li><a href="#about">Hakkımızda</a></li>
+            <li><a href="#recipes">Tarifler</a></li>
+            <li><a href="#contact">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <!-- Ana Sayfa -->
+    <section id="home">
+        <div class="slider">
+            <div class="slides">
+                <!-- Slider içeriği JavaScript ile doldurulacak -->
+            </div>
+            <button class="slider-btn prev">&lt;</button>
+            <button class="slider-btn next">&gt;</button>
+            <div class="slider-dots"></div>
+        </div>
+    </section>
+
+    <!-- Hakkımızda -->
+    <section id="about">
+        <h2>Hakkımızda</h2>
+        <div class="about-content">
+            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=2000&q=80" alt="Mutfak">
+            <p>Biz, geleneksel Türk mutfağını modern dünyayla buluşturmayı amaçlayan bir ekibiz. Anadolu’nun zengin kültüründen beslenerek hazırladığımız tariflerle, geçmişten gelen lezzetleri geleceğe taşımak için çalışıyoruz. Her tarifimiz, sadece bir yemek değil; köklü bir mirasın, paylaşılan anıların ve unutulmaz sofraların bir yansımasıdır.<br><br>
+                Amacımız, mutfak kültürümüzü herkes için erişilebilir kılmak ve bu değerli mirası koruyarak yaşatmaktır. Geleneksel tariflerimizi, modern anlatımlarla sunarak her yaştan insanın mutfakta keyifli vakit geçirmesini sağlıyoruz. Mutfakta yeni olanlar için öğretici, deneyimli olanlar için ilham verici içerikler hazırlıyoruz. <br><br>
+                Lezzetli yemeklerin insanları bir araya getirme gücüne inanıyoruz. Bu nedenle, mutfak kültürümüzü tanıtırken sadece tarifleri değil, bu tariflerin ardındaki hikayeleri, gelenekleri ve sevgiyi de paylaşıyoruz. Çünkü bizim için yemek, kültürün, dostluğun ve paylaşımın en lezzetli halidir.</p>
+        </div>
+    </section>
+
+    <!-- Tarifler -->
+    <section id="recipes">
+        <h2>Tarifler</h2>
+        <div class="recipes-grid">
+            <!-- Tarifler JavaScript ile doldurulacak -->
+        </div>
+    </section>
+    
+    <div class="go-to-recipes">
+        <a id="load-more-btn">Daha Fazla Gör</a>
+    </div>
+    
+
+    <!-- İletişim -->
+    <section id="contact">
+        <h2>İletişim</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Bize Ulaşın</h3>
+                <p><i class="icon">📞</i> +90 555 123 4567</p>
+                <p><i class="icon">✉️</i> info@lezzetlitarifler.com</p>
+                <p><i class="icon">📍</i> Denizli, Türkiye</p>
+            </div>
+            <form class="contact-form" id="contact-form">
+                <input type="text" placeholder="Adınız" id="name_surname" required>
+                <input type="email" placeholder="E-posta" id="email" required>
+                <textarea placeholder="Mesajınız" id="message" rows="4" required></textarea>
+                <button type="submit">Gönder</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Lezzetli Tarifler. Tüm hakları saklıdır.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

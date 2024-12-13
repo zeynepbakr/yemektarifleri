@@ -1,0 +1,335 @@
+/* Genel Stiller */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #92140C;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #353238;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #92140C;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background: #353238;
+    transition: 0.3s;
+}
+
+/* Slider */
+.slider {
+    margin-top: 60px;
+    position: relative;
+    height: 700px;
+    overflow: hidden;
+}
+
+.slides {
+    height: 100%;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: #2f2f2f;
+    padding: 2rem;
+    border-radius: 8px;
+    opacity: 0.7;
+}
+.slide-content h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #FFF;
+}
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #e1e1e1;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.prev { left: 1rem; }
+.next { right: 1rem; }
+
+.slider-dots {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #92140C;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: white;
+}
+
+/* Bölümler */
+section {
+    padding: 4rem 2rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #353238;
+}
+
+/* Hakkımızda */
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+}
+
+.about-content img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Tarifler */
+.recipes-grid, .recipes-page-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.recipe-card, .recipe-page-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.recipe-card img, .recipe-page-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-content, .recipe-page-content{
+    padding: 1rem;
+}
+.recipe-content a,.recipe-page-content a{
+    text-decoration: none;
+    color: #353238;
+    transition: all .2s ease;
+}
+.recipe-content a:hover, .recipe-page-content a:hover{
+    zoom: 1.2;
+}
+
+.go-to-recipes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.go-to-recipes a{
+    text-decoration: none;
+    padding: 8px 20px;
+    border: 1px solid #92140C;
+    color: #92140C;
+    border-radius: 10px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.go-to-recipes a:hover{
+    background-color: #92140C;
+    color: #FFF;
+}
+#specification {
+    padding: 50px 20px;
+    background-color: #fff;
+    max-width: 800px;
+    margin: 6% auto 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#specification img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.specification-container h3 {
+    width: 100%;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.specification-container ul, .specification-container ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.specification-container li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+
+
+.specification-container ol li::before {
+    counter-increment: step;
+    font-weight: bold;
+}
+/* İletişim */
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none;
+    font-family: 'Arial', sans-serif;
+}
+
+.contact-form button {
+    background: #92140C;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #353238;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
