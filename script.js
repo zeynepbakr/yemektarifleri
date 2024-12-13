@@ -22,7 +22,7 @@ const recipes = [
         url: 'karniyarik.html',
         name: 'Karnıyarık',
         description: 'Patlıcanın en lezzetli hali',
-        image: 'https://images.unsplash.com/photo-1625943553852-781c6dd46faa?auto=format&fit=crop&w=2000&q=80'
+        image: 'https://miguzmankasapstr01.blob.core.windows.net/miguzmankasapstr01/karniyarik-638309032346463480.jpg'
     },
     {
         url: 'manti.html',
