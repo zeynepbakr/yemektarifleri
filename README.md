@@ -1,2 +1,2 @@
-# yemektarifleri.github.io
+# yemektarifleri
 web tabanlı programlama ödevi 
