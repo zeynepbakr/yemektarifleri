@@ -34,7 +34,7 @@ const recipes = [
         url: 'iskender.html',
         name: 'İskender',
         description: 'Bursa\'nın meşhur lezzeti',
-        image: 'https://images.unsplash.com/photo-1539755530862-00f623c00f52?auto=format&fit=crop&w=2000&q=80'
+        image: 'https://bonet.com.tr/dosyalar/2021/6/iskender-02625.jpg.webp'
     }
 ];
 
