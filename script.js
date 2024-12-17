@@ -155,6 +155,12 @@ var name_surname = document.getElementById('name_surname');
 var email = document.getElementById('email');
 var message = document.getElementById('message');
 
+// Verileri konsola yazdır
+console.log('Ad:', name_surname);
+console.log('E-posta:', email);
+console.log('Mesaj:', message);
+
+
 // Form gönderildiğinde çalışacak fonksiyon
 form.addEventListener('submit', function(event) {
     event.preventDefault(); // Sayfanın yeniden yüklenmesini önler
