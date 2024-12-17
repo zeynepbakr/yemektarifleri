@@ -156,9 +156,9 @@ var email = document.getElementById('email');
 var message = document.getElementById('message');
 
 // Verileri konsola yazdır
-console.log('Ad:', name_surname);
-console.log('E-posta:', email);
-console.log('Mesaj:', message);
+console.log('Ad:', name_surname.value);
+console.log('E-posta:', email.value);
+console.log('Mesaj:', message.value);
 
 
 // Form gönderildiğinde çalışacak fonksiyon
